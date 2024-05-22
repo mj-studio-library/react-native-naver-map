@@ -25,6 +25,11 @@
 
 ### 1. New Architecture Fabric
 
+> [!NOTE]
+> `1.x` 버전은 Old Architecture(Bridge)를 지원하지만 `2.x`버전부터 그에 대한 지원을 중단합니다. 만약 프로젝트가 New Architecture로 이전하지 않았다면 [`1.x` 버전](https://github.com/mym0404/react-native-naver-map/tree/v1.5.6)을 이용해주세요.
+>
+> 여전히 `1.x` 버전에서도 Naver Map을 쓰기 위해서 부족한 기능이 거의 없는 Prop과 Command들을 제공하며 무리없이 지도를 활용하는 대부분의 usecase를 만족하는 앱을 구축하실 수 있습니다.
+
 ### 2. Detailed API Documentation
 
 거의 모든 타입이 설명되어 있는 [API Docs](https://mym0404.github.io/react-native-naver-map/interfaces/NaverMapViewProps.html)를 구성했습니다.
@@ -496,7 +501,6 @@ useEffect(() => {
 | [NaverMapCircleOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-4.html)        | ✅   | ✅       | 원 오버레이        |
 | [NaverMapPolylineOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-4.html)      | ✅   | ✅       | 폴리라인 오버레이     |
 | [NaverMapPolygonOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-4.html)       | ✅   | ✅       | 폴리곤           |
-| [NaverMapLocationOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-5.html)      | 📦  | 📦      | 커스텀 위치 오버레이   |
 | [NaverMapGroundOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-6.html)        | ✅  | ✅      | 지상 오버레이       |
 | [NaverMapPathOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-7.html)          | ✅   | ✅       | 경로 오버레이       |
 | [NaverMapMultipartPathOverlay](https://navermaps.github.io/android-map-sdk/guide-ko/5-7.html) | 📦  | 📦      | 여러개의 경로 오버레이  |
@@ -614,13 +618,6 @@ iOS에선 단순히 `UIView`를 `UIImage`로 캔버스에 그려 표시해줍니
 |---------------------------|----------------------------------------------------|---------|
 | caption-fontFamily        | ❓                                                  | ❓       |
 | subcaption-fontFamily     | ❓                                                  | ❓       |
-
-## Supporting Table - Architecture
-
-|        | iOS | Android |
-|--------|-----|---------|
-| Bridge | ✅   | ✅       |
-| Fabric | ✅️  | ✅️      |
 
 ## Milestone
 
